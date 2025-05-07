@@ -1,0 +1,1 @@
+Calcula la integral ∫₀¹ x² dx.

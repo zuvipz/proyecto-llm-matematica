@@ -1,0 +1,11 @@
+ejercicio,modelo,tiempo_ms
+benchmark_ej1,llama2,4606
+benchmark_ej2,llama2,2857
+benchmark_ej3,llama2,5852
+benchmark_ej4,llama2,3050
+benchmark_ej5,llama2,2813
+benchmark_ej1,llama3.2,5496
+benchmark_ej2,llama3.2,8567
+benchmark_ej3,llama3.2,2768
+benchmark_ej4,llama3.2,2740
+benchmark_ej5,llama3.2,1951
