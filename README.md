@@ -1,4 +1,4 @@
-# Proyecto 2025: LLM Local para resolución de rjercicios matemáticos
+# Proyecto 2025: LLM Local para resolución de ejercicios matemáticos
 
 **Asignatura:** Probabilidad y Estadística (T4-17-17)
 
