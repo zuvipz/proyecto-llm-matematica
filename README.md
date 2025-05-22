@@ -1,171 +1,142 @@
-# Proyecto 2025: LLM Local para resolución de ejercicios matemáticos
+# Asistente Matemático con LLMs Locales
 
-**Asignatura:** Probabilidad y Estadística (T4-17-17)
+Este proyecto implementa un sistema para evaluar modelos de lenguaje (LLMs) locales en la resolución de problemas matemáticos. Utilizando [Ollama](https://ollama.ai/) como motor de ejecución, permite comparar diferentes modelos como Llama 2 y Llama 3.2 en su capacidad para resolver problemas matemáticos.
 
-**Objetivo:** Evaluar la utilización de modelos de lenguaje (LLM) como herramienta de apoyo para resolver ejercicios de matemáticas, promoviendo el trabajo colaborativo y el desarrollo de competencias profesionales.
+![Vista previa](https://github.com/user/repo/assets/preview.png)
 
----
+## Características principales
 
-## 1. Organización del equipo
+- 🧮 **Resolución de problemas matemáticos** usando LLMs locales
+- 📊 **Visualizaciones comparativas** de rendimiento entre modelos
+- 🔍 **Análisis detallado** de tiempos de respuesta y precisión
+- 📱 **Interfaz web** para fácil interacción con los modelos
+- 📈 **Generación de reportes** para análisis cualitativos
 
-* **Coordinador/a:** Planifica reuniones, distribuye tareas y vela por el avance.
-* **Comunicador/a:** Canaliza la comunicación con el docente y documenta las decisiones.
-* **Integrantes (hasta 6):** Se reparten roles técnicos (prompt engineering, pruebas, documentación).
+## Instalación rápida
 
----
+### Prerrequisitos
 
-## 2. Fases del proyecto
+- Python 3.8+
+- [Ollama](https://ollama.ai/) instalado con modelos llama2 y llama3.2
 
-| Fase        | Temas                        | Objetivos técnicos                                         |
-| ----------- | ---------------------------- | ---------------------------------------------------------- |
-| **Primera** | Contenido del primer parcial | - Instalar y configurar Ollama (u otra herramienta local). |
+### Pasos de instalación
 
-* Descargar y probar modelos matemáticos.
-* Resolver ejercicios por prompts.
-* Documentar precisión, tiempos y alucinaciones
-* Comparar rendimiento en español e inglés.
-* Recopilar métricas de hardware y performance.
-* Analizar dinámica de equipo.
-* Metodología y colaboración.
-* Vinculación con resultados de aprendizaje.
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/user/proyecto-llm-matematicas.git
+   cd proyecto-llm-matematicas
+   ```
 
+2. Crear y activar entorno virtual:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # Linux/macOS
+   # o
+   .venv\Scripts\activate     # Windows
+   ```
 
----
+3. Instalar dependencias:
+   ```bash
+   cd api
+   pip install -r requirements.txt
+   ```
 
-## 3. Solución técnica paso a paso
+## Uso
 
-### 3.1. Prerrequisitos
-
-* macOS 10.15+ (o Linux/Windows con adaptaciones).
-* Homebrew (en macOS) o gestor equivalente.
-* Python 3.10+ para la API.
-
-### 3.2. Instalación y configuración de Ollama
-
-```bash
-git clone <your-repo-url> proyecto-llm-matematicas
-cd proyecto-llm-matematicas
-
-# create & activate venv
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3.3. Estructura de carpetas del proyecto
-
-```bash
-- prompts/: enunciados (.txt)
-- outputs/: respuestas (.md)
-- docs/: documentación
-- api/: servicio HTTP
-```
-
-### 3.4. Primer experimento con CLI
-
-```bash
-# Enunciado de prueba
-cat << 'EOF' > prompts/ej1_probabilidad.txt
-Resuelve: Si tiro dos dados, ¿probabilidad de sumar 7?
-EOF
-
-# Ejecución y cronometraje
-time ollama run llama2 < prompts/ej1_probabilidad.txt > outputs/ej1_probabilidad.md
-
-# Revisión
-echo "--- Response ---" && cat outputs/ej1_probabilidad.md
-```
-
-Registra en `docs/primer_parcial.md`:
-
-```markdown
-# Resultados Primer Parcial
-
-| Ejercicio                 | Modelo  | Precisión | Tiempo (s) | Observaciones            |
-|---------------------------|---------|-----------|------------|--------------------------|
-| Suma de dos dados = 7    | llama2  | Sí        | 0.8        | Correcto, sin alucinaciones |
-```
-
-### 3.5. API HTTP con FastAPI
-
-#### 3.5.1. Dependencias (`api/requirements.txt`)
-
-```text
-fastapi
-uvicorn[standard]
-requests
-pydantic
-streamlit
-```
-
-#### 4. Virtual environment y arranque
+### Iniciar el servidor API
 
 ```bash
 cd api
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
+source .venv/bin/activate  # Si no está activado
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-> Documenta en `docs/api.md` las respuestas de `/models` y `/run`.
+### Iniciar la interfaz web
 
----
+En una nueva terminal:
 
-## 6. Benchmarking comparativo: llama3.2 vs llama2
+```bash
+cd api
+source .venv/bin/activate
+streamlit run ui.py
+```
 
-Para determinar cuál modelo funciona mejor como asistente matemático local, realiza los siguientes pasos:
+La interfaz web se abrirá automáticamente en `http://localhost:8501`.
 
-### 6.1. Preparación de prompts
+## Modos de uso
 
-1. Identifica o crea un conjunto de ejercicios (5–10) en `prompts/`, nombrándolos como `benchmark_ej1.txt`, `benchmark_ej2.txt`, etc.
-2. Asegúrate de que cada archivo contiene únicamente el enunciado del ejercicio.
+### Modo Individual
 
-### 6.2. Script de benchmarking (`benchmark.sh`)
+- Selecciona un modelo
+- Escribe un problema matemático
+- Obtén la respuesta al instante
 
-Guarda este script en la raíz del proyecto y dale permisos de ejecución (`chmod +x benchmark.sh`):
+### Modo Test
 
-Esta versión usa Python para medir milisegundos en macOS. Asegúrate de:
+- Selecciona múltiples modelos para comparar
+- Elige entre 10 problemas matemáticos predefinidos
+- Visualiza resultados con gráficos comparativos:
+  - Barras horizontales por problema
+  - Diagrama de Gantt de tiempos
+  - Gráfico de radar para patrones de rendimiento
+  - Comparativa directa entre modelos
 
-* Haber creado los archivos `prompts/benchmark_ej1.txt` … `prompts/benchmark_ej5.txt` dentro de la carpeta `prompts/`.
-* Ejecutar el script desde la raíz del proyecto.
+## Generación de reportes
 
-### 6.3. Recopilar resultados
+Después de ejecutar pruebas, puedes generar un reporte detallado:
 
-Recopilar resultados
-
-1. Ejecuta el script:
-
+1. Descarga los resultados JSON desde la UI
+2. Ejecuta el generador de reportes:
    ```bash
-   ./benchmark.sh
+   cd api
+   python generate_report.py ruta/a/resultados_test.json -o ../docs/mi_evaluacion.md
    ```
-2. Abre `outputs/benchmark/tiempos.csv` para ver los tiempos en milisegundos.
-3. Revisa en `outputs/benchmark/*.md` las respuestas generadas.
-4. Crea `docs/benchmark_modelos.md` con una tabla:
 
-   | Ejercicio                                                                                                         | Modelo   | Tiempo (ms) | Precisión | Observaciones |
-   | ----------------------------------------------------------------------------------------------------------------- | -------- | ----------- | --------- | ------------- |
-   | ej1                                                                                                               | llama2   | 1234        | Sí/No     | ...           |
-   | ej1                                                                                                               | llama3.2 | 987         | Sí/No     | ...           |
-   | Completa la columna **Precisión** evaluando si la respuesta es correcta y añade comentarios en **Observaciones**. |          |             |           |               |
+El reporte incluirá:
+- Información del sistema (CPU, RAM, GPU)
+- Comparativa de tiempos entre modelos
+- Plantilla para evaluar la calidad de las respuestas
 
----
+## Problemas matemáticos incluidos
 
-> Con este benchmark podrás decidir cuál modelo local ofrece el mejor equilibrio entre velocidad y precisión para tu asistente de matemáticas.
+El sistema incluye 10 problemas matemáticos que cubren:
 
+1. Probabilidad básica (suma de dados)
+2. Cálculo - integrales
+3. Teoría de números (conteo de primos)
+4. Ecuaciones diferenciales
+5. Problemas de física - cinemática
+6. Desarrollo de expresiones algebraicas
+7. Probabilidad avanzada
+8. Sistemas de ecuaciones lineales
+9. Cálculo - derivadas
+10. Geometría (triángulos)
 
-## 7. Interfaz de Usuario con Streamlit
+## Estructura del proyecto
 
+```
+proyecto-llm-matematicas/
+├── api/                # Servidor FastAPI y UI de Streamlit
+│   ├── main.py         # API REST para interactuar con Ollama
+│   ├── ui.py           # Interfaz de usuario con Streamlit
+│   ├── generate_report.py # Generador de reportes de evaluación
+│   └── requirements.txt # Dependencias del proyecto
+├── prompts/            # Problemas matemáticos predefinidos
+│   ├── benchmark_ej1.txt
+│   └── ...
+├── outputs/            # Almacenamiento de resultados
+│   └── benchmark/      # Resultados de comparativas
+├── docs/               # Documentación y reportes
+└── README.md           # Este archivo
+```
 
-![image](https://github.com/user-attachments/assets/27228ff6-cd08-49c7-a8e3-be546a0a5739)
+## Contribuciones
 
+Las contribuciones son bienvenidas. Puedes:
+- Añadir nuevos problemas matemáticos en `prompts/`
+- Mejorar las visualizaciones en `api/ui.py`
+- Añadir soporte para nuevos modelos
 
-### 7.3. Ejecutar la UI
+## Licencia
 
-1. Asegúrate que tu API esté corriendo en `localhost:8000`.
-2. En la raíz del proyecto:
-
-   ```bash
-   streamlit run ui.py
-   ```
-3. Se abrirá automáticamente en tu navegador en `http://localhost:8501`.
+Este proyecto está disponible bajo la licencia MIT.
