@@ -1,0 +1,30 @@
+[
+  {
+    "problem_id": "benchmark_ej1",
+    "model": "llama2",
+    "prompt": "Resuelve: Si tiro dos dados justos, ¿cuál es la probabilidad de que la suma sea 7?",
+    "response": "\nSi tiramos dos dados justos, la probabilidad de que la suma sea 7 es:\n\nTotal número de posibilidades de suma = 2 x 6 = 12\n\nPosibilidades de suma = 7: 4\n\nPor lo tanto, la probabilidad de que la suma sea 7 es:\n\nProbabilidad = Posibilidades de suma / Total número de posibilidades de suma\n= 4/12\n= 1/3\n\n Entonces, la probabilidad de que la suma de dos dados justos sea 7 es el 1/3 o el 33%.",
+    "time_ms": 8137
+  },
+  {
+    "problem_id": "benchmark_ej2",
+    "model": "llama2",
+    "prompt": "Calcula la integral ∫₀¹ x² dx.",
+    "response": "\nTo calculate the integral $\\int_{0}^{1} x^{2} dx$, we can use the power rule of integration:\n\n$$\\int_{0}^{1} f(x) dx = \\int_{0}^{1} f'(x) dx$$\n\nSince $f'(x) = 2x$, we have:\n\n$$\\int_{0}^{1} x^{2} dx = \\int_{0}^{1} 2x dx = 2\\int_{0}^{1} x dx = 2(1 - 0) = 2$$\n\nTherefore, the integral of $x^{2}$ over the interval $[0, 1]$ is equal to $2$.",
+    "time_ms": 4060
+  },
+  {
+    "problem_id": "benchmark_ej1",
+    "model": "llama3.2",
+    "prompt": "Resuelve: Si tiro dos dados justos, ¿cuál es la probabilidad de que la suma sea 7?",
+    "response": "Para resolver este problema, necesitamos contar el número de formas en las que se puede obtener una suma de 7 tirando dos dados. Podemos comenzar identificando todas las posibilidades:\n\n*   La suma de 2\n*   La suma de 3\n*   La suma de 4.\n*   La suma de 5\n*   La suma de 6.\n*   La suma de 7\n*   La suma de 8.\\\n\\begin{align}P(número \\text{de } sumas de 7) &amp;= \\frac{\\textrm{Número de resultados en los que obtenemos un suma de 7}}{\\textrm{Total número de resultados posibles}}\\cr P(súper nº de suma 7) &amp;= \\frac{número \\text{de } sumas de 7}{\\textrm{Total número de resultados posibles}}\\cr P(súper nº de suma 7) &amp;= \\frac{6 - {3}\\\\     =P(súper nº de suma 7)\\end{align}\nPor lo tanto, la probabilidad de obtener una suma de 7 cuando tiramos dos dados es $P(super de suma 7) =\\frac{\\text{número total de resultados (de suma 6 o superior)}}{\\textrm{Total de resultados posibles}}=\\frac6{{36}_2}=\\frac35=20\\%$",
+    "time_ms": 6793
+  },
+  {
+    "problem_id": "benchmark_ej2",
+    "model": "llama3.2",
+    "prompt": "Calcula la integral ∫₀¹ x² dx.",
+    "response": "¡Hola! Estoy aquí para ayudarte a resolver el problema de integral.\n\nLa integral que nos proponen es:\n\n∫x² dx desde 0 hasta 1.\n\nEl primer paso para resolver esta integral es encontrar la función antiderivada de x². Sabemos que la derivada de x² con respecto a x es 2x, entonces la antiderivada de x² será:\n\nx³/3 + C\n\ndonde C es una constante indefinida.\n\nAhora, queremos encontrar el valor del integral entre los límites 0 y 1. Para hacer esto, sustituiremos los valores de los límites en la antiderivada obtenida anteriormente:\n\n∫x² dx desde 0 hasta 1 = [x³/3] desde 0 hasta 1\n\n=x³orte ³- ³= (0orte)\n\nAhora evaluamos un solo valor de x = 1 y obtenemos el siguiente valor en la función antiderivada.",
+    "time_ms": 3445
+  }
+]
