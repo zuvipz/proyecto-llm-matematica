@@ -1,1 +1,0 @@
-En una distribución normal con media 70 y desviación estándar 5, ¿cuál es la probabilidad de que una observación esté entre 62 y 76?
