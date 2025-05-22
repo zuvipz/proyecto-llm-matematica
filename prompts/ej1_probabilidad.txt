@@ -1,2 +1,0 @@
-Resuelve este ejercicio de probabilidad:
-Si tiro dos dados justos, ¿cuál es la probabilidad de que la suma sea 7?
