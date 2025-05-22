@@ -1,0 +1,1 @@
+Calcula la derivada de f(x) = x³ln(x) - 2x². 

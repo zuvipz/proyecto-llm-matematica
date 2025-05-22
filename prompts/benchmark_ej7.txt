@@ -1,0 +1,1 @@
+Una urna contiene 5 bolas rojas, 3 azules y 2 verdes. Si se extraen 2 bolas al azar sin reposición, ¿cuál es la probabilidad de que ambas sean del mismo color? 
