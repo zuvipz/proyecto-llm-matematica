@@ -1,1 +1,1 @@
-Resuelve: Si tiro dos dados justos, ¿cuál es la probabilidad de que la suma sea 7?
+Resuelve: Si tiro dos dados justos, ¿cuál es la probabilidad de que la suma sea 7??
