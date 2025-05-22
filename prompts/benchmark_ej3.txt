@@ -1,1 +1,1 @@
-¿Cuántos números primos hay entre 1 y 100?
+En un comercio se atienden en promedio 16 personas por hora. ¿Cuál es la probabilidad de que durante tres horas consecutivas se atiendan exactamente 50 personas?
