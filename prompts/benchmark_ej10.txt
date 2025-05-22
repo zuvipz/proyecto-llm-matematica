@@ -1,0 +1,1 @@
+Un triángulo tiene lados de longitudes 5, 12 y 13 unidades. Determina si el triángulo es rectángulo y calcula su área. 

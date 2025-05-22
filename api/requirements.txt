@@ -3,4 +3,7 @@ uvicorn[standard]
 requests
 pydantic
 streamlit
+pandas
+psutil
+plotly
 
