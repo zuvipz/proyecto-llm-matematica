@@ -1,0 +1,4 @@
+En una empresa trabajan 60 personas. 40 son mujeres, 45 viven en Capital Federal, y 33 son mujeres que viven en Capital Federal.
+
+a) Complete una tabla de contingencia con los totales de cada grupo.
+b) ¿Cuál es la probabilidad de seleccionar una persona que sea mujer o que viva en Capital Federal?

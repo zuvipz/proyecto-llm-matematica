@@ -1,0 +1,9 @@
+Values of xi: 2, 3, 5, 6, 9, 8, 11  
+Frequencies fi: 4, 7, 10, 8, 5, 4, 2  
+Total observations: 40
+
+a) Calculate the median  
+b) Calculate the arithmetic mean  
+c) Calculate the variance  
+d) Calculate the standard deviation  
+e) Calculate the coefficient of variation and interpret whether the data is homogeneous

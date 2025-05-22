@@ -1,0 +1,1 @@
+Se tienen 180 memorias de las cuales 7 son defectuosas. Si se selecciona un lote de 12 memorias al azar, ¿cuál es la probabilidad de que contenga exactamente 2 memorias defectuosas?

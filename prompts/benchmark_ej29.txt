@@ -1,0 +1,1 @@
+There are 180 memory units, 7 of which are defective. If a random batch of 12 memories is selected, what is the probability that exactly 2 of them are defective?

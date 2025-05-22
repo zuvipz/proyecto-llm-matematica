@@ -1,0 +1,3 @@
+Se sacan dos cartas de un mazo estándar de 52 cartas.
+a) ¿Cuál es la probabilidad de que ambas sean ases si la primera se reemplaza?
+b) ¿Cuál es la probabilidad de que ambas sean ases si la primera no se reemplaza

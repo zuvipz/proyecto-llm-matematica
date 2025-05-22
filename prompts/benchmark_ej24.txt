@@ -1,0 +1,3 @@
+Two cards are drawn from a standard 52-card deck.
+a) What is the probability that both are aces if the first is replaced?
+b) What is the probability that both are aces if the first is not replaced?

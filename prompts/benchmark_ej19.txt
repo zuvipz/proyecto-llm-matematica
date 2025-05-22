@@ -1,0 +1,1 @@
+Given AGE (YEARS): (22, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 36) and COUNT: (1, 5, 2, 2, 6, 3, 1, 5, 2, 1, 1, 1), calculate the arithmetic mean of the distribution and explain what that value represents in the context of students' ages. Additionally, discuss whether this value could be affected by outliers and why.

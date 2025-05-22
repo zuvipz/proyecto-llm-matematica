@@ -1,0 +1,1 @@
+Dado Edad (AÑOS): (22, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 36) y Cantidad de personas: (1, 5, 2, 2, 6, 3, 1, 5, 2, 1, 1, 1), calcule la media aritmética de la distribución y explique qué representa ese valor en el contexto de la edad de los estudiantes. Además, indique si este valor puede ser afectado por valores extremos y por qué.

@@ -1,0 +1,4 @@
+Un sistema de comunicación transmite bits (0 y 1). La probabilidad de que un 0 se transmita correctamente es 0.94 y que un 1 se transmita correctamente es 0.9. Se sabe que la probabilidad de enviar un 0 es 0.45.
+
+a) ¿Cuál es la probabilidad de que la transmisión de un bit sea correcta?
+b) Si se transmiten 2 bits, ¿cuál es la esperanza matemática (valor esperado) de bits correctamente 

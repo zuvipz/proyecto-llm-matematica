@@ -1,0 +1,4 @@
+A company employs 60 people. 40 are women, 45 live in Capital Federal, and 33 are women who live in Capital Federal.
+
+a) Complete a contingency table with the totals of each group.
+b) What is the probability of selecting a person who is a woman or who lives in Capital Federal?

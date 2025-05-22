@@ -1,0 +1,5 @@
+Una fábrica tiene tres máquinas (M1, M2, M3) que producen un tipo de silla.
+- M1 produce el 50% del total, con 10% de sillas defectuosas.
+- M2 produce el 30% del total, con 25% de defectuosas.
+- M3 produce el 20% del total, con 30% de defectuosas.
+Si se encuentra una silla defectuosa, ¿cuál es la probabilidad de que haya sido fabricada por la máquina M1?

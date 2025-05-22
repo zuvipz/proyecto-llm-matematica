@@ -1,0 +1,10 @@
+Valores de xi: 2, 3, 5, 6, 9, 8, 11  
+Frecuencias fi: 4, 7, 10, 8, 5, 4, 2  
+Total de observaciones: 40
+
+a) Calcular la mediana  
+b) Calcular la media aritmética  
+c) Calcular la varianza  
+d) Calcular el desvío estándar  
+e) Calcular el coeficiente de variación e interpretar si los datos son homogéneos
+

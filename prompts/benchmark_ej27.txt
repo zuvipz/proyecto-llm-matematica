@@ -1,0 +1,4 @@
+A communication system transmits binary digits (0 and 1). The probability that a 0 is correctly transmitted is 0.94, and that a 1 is correctly transmitted is 0.9. The probability of sending a 0 is 0.45.
+
+a) What is the probability that a bit is correctly transmitted?
+b) If 2 bits are transmitted, what is the expected number of correctly transmitted bits?

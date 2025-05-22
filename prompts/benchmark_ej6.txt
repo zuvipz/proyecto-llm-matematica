@@ -1,0 +1,4 @@
+Una caja contiene 3 bolillas azules, 2 bolillas blancas y 5 bolillas rojas. Se selecciona una bolilla al azar.
+
+a) ¿Cuál es la probabilidad de que la bolilla seleccionada sea azul?
+b) ¿Cuál es la probabilidad de que la bolilla seleccionada no sea azul?

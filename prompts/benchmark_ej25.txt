@@ -1,0 +1,5 @@
+A factory has three machines (M1, M2, M3) producing chairs.
+- M1 produces 50% of the total, with 10% defective.
+- M2 produces 30%, with 25% defective.
+- M3 produces 20%, with 30% defective.
+If a defective chair is found, what is the probability it was produced by machine M1?

@@ -1,0 +1,5 @@
+In a multiple-choice test with 4 questions (each with 3 options), a student answers randomly without studying. Each correct answer has a probability of 1/3 and incorrect answer of 2/3.
+
+a) What is the probability of passing if at least 3 correct answers are needed?
+b) What is the most probable outcome?
+c) If 23 students guess randomly, how many are expected to pass?

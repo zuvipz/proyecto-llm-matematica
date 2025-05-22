@@ -1,0 +1,1 @@
+En una ciudad de 31.542 habitantes, se seleccionan aleatoriamente 200 propietarios y se calcula que el promedio de su factura es de $1.043. Identifica el parámetro, el estadístico, la muestra y la población.

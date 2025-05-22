@@ -1,0 +1,1 @@
+In a store, an average of 16 people are served per hour. What is the probability that exactly 50 people are served over three consecutive hours?

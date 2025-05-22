@@ -1,0 +1,5 @@
+En una evaluación con 4 preguntas de opción múltiple (3 opciones por pregunta), un alumno responde al azar sin haber estudiado. Cada respuesta correcta tiene probabilidad de 1/3 y cada incorrecta de 2/3.
+
+a) ¿Cuál es la probabilidad de aprobar si se necesitan al menos 3 respuestas correctas?
+b) ¿Cuál es el resultado más probable?
+c) Si hay 23 alumnos que responden al azar, ¿cuántos aprobarían en promedio?

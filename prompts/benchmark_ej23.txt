@@ -1,0 +1,4 @@
+An urn contains 6 red balls, 4 white balls, and 5 blue balls. One ball is drawn at random.
+a) What is the probability that it is red?
+b) What is the probability that it is white or blue?
+c) What is the probability that it is not red?

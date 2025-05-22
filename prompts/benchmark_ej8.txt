@@ -1,0 +1,4 @@
+Una urna contiene 6 bolillas rojas, 4 bolillas blancas y 5 bolillas azules. Se extrae una bolilla al azar.
+a) ¿Cuál es la probabilidad de que sea roja?
+b) ¿Cuál es la probabilidad de que sea blanca o azul?
+c) ¿Cuál es la probabilidad de que no sea roja?

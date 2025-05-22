@@ -1,0 +1,1 @@
+In a normal distribution with a mean of 70 and standard deviation of 5, what is the probability that an observation lies between 62 and 76?

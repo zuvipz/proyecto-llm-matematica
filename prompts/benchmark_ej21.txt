@@ -1,0 +1,4 @@
+A box contains 3 blue balls, 2 white balls, and 5 red balls. One ball is randomly selected.
+
+a) What is the probability that the selected ball is blue?
+b) What is the probability that the selected ball is not blue?
